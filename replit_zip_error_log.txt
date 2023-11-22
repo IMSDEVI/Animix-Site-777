@@ -1,0 +1,16 @@
+{"error":"lstat /home/runner/Trabalho-HTML/roman.jpg: no such file or directory","level":"error","msg":"unable to stat roman.jpg","time":"2023-11-22T23:21:54Z"}
+{"error":"lstat /home/runner/Trabalho-HTML/saber.jpg: no such file or directory","level":"error","msg":"unable to stat saber.jpg","time":"2023-11-22T23:21:54Z"}
+{"error":"lstat /home/runner/Trabalho-HTML/series_2698_akame.jpg: no such file or directory","level":"error","msg":"unable to stat series_2698_akame.jpg","time":"2023-11-22T23:21:54Z"}
+{"error":"lstat /home/runner/Trabalho-HTML/seta.png: no such file or directory","level":"error","msg":"unable to stat seta.png","time":"2023-11-22T23:21:54Z"}
+{"error":"lstat /home/runner/Trabalho-HTML/shijou.jpg: no such file or directory","level":"error","msg":"unable to stat shijou.jpg","time":"2023-11-22T23:21:54Z"}
+{"error":"lstat /home/runner/Trabalho-HTML/skel.jpg: no such file or directory","level":"error","msg":"unable to stat skel.jpg","time":"2023-11-22T23:21:54Z"}
+{"error":"lstat /home/runner/Trabalho-HTML/smooth-anime-gif-1.gif: no such file or directory","level":"error","msg":"unable to stat smooth-anime-gif-1.gif","time":"2023-11-22T23:21:54Z"}
+{"error":"lstat /home/runner/Trabalho-HTML/star.gif: no such file or directory","level":"error","msg":"unable to stat star.gif","time":"2023-11-22T23:21:54Z"}
+{"error":"lstat /home/runner/Trabalho-HTML/suki.jpg: no such file or directory","level":"error","msg":"unable to stat suki.jpg","time":"2023-11-22T23:21:54Z"}
+{"error":"lstat /home/runner/Trabalho-HTML/the god.png: no such file or directory","level":"error","msg":"unable to stat the god.png","time":"2023-11-22T23:21:54Z"}
+{"error":"lstat /home/runner/Trabalho-HTML/the.jpg: no such file or directory","level":"error","msg":"unable to stat the.jpg","time":"2023-11-22T23:21:54Z"}
+{"error":"lstat /home/runner/Trabalho-HTML/toda.jpg: no such file or directory","level":"error","msg":"unable to stat toda.jpg","time":"2023-11-22T23:21:54Z"}
+{"error":"lstat /home/runner/Trabalho-HTML/tomo.jpg: no such file or directory","level":"error","msg":"unable to stat tomo.jpg","time":"2023-11-22T23:21:54Z"}
+{"error":"lstat /home/runner/Trabalho-HTML/toyko.jpg: no such file or directory","level":"error","msg":"unable to stat toyko.jpg","time":"2023-11-22T23:21:54Z"}
+{"error":"lstat /home/runner/Trabalho-HTML/uq.webp: no such file or directory","level":"error","msg":"unable to stat uq.webp","time":"2023-11-22T23:21:54Z"}
+{"error":"lstat /home/runner/Trabalho-HTML/xia.jpg: no such file or directory","level":"error","msg":"unable to stat xia.jpg","time":"2023-11-22T23:21:54Z"}
