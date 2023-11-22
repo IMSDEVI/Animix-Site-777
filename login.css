@@ -1,0 +1,92 @@
+/* Adicione seus estilos aqui */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    background-color: #000; 
+    color: white; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.gray-bubble {
+    background-color: #333; 
+    padding: 70px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+h2 {
+    color: white; 
+    font-family: 'Nome da Fonte'; 
+    font-size: 24px; 
+    margin: 0;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: orange; 
+    color: white; 
+    font-size: 18px; 
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container,
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px; /* Espaço entre os contêineres */
+}
+
+.footer-links {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os links quebrem para a próxima linha */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    margin: 5px; /* Espaço entre os links */
+}
+
+/* Estilos para as imagens */
+.left-image,
+.right-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 200px; /* Ajuste conforme necessário */
+}
+
+.left-image {
+    left: 0;
+}
+
+.right-image {
+    right: 0;
+}

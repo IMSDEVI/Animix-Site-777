@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+  background-color: #333;
+  color: white;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.left-section h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.right-section input[type="text"] {
+  padding: 8px;
+  width: 200px;
+}
+
+main {
+  display: flex;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.image-gallery {
+  padding: 20px;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.image-grid img {
+  width: calc(25% - 12px); /* Para que as imagens ocupem 25% da largura com um espaçamento de 10px entre elas */
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 40px; /* Altere o tamanho conforme desejado */
+}
+
+.category-bubble {
+  background-color: #3498db; /* Cor de fundo da bolha */
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 150px; /* Largura da bolha */
+}
+
+.category-bubble img {
+  width: 100px; /* Largura da imagem dentro da bolha */
+  border-radius: 50%;
+}
+
+.category-bubble p {
+  margin: 5px 0 0; /* Margem superior para o título */
+  font-size: 14px; /* Tamanho do texto do título */
+  color: white; /* Cor do texto do título */
+}

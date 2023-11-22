@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('Top-10-Best-Anime-Image-Pinterest.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+
+.sidebar {
+  background-color: #333;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.exploration-bar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.exploration-bar h1,
+.underline {
+  color: orange;
+}
+
+.exploration-bar h1 {
+  font-size: 23px;
+  margin: 0;
+}
+
+.underline {
+  height: 3px;
+  width: 80%;
+  background-color: orange;
+  margin: 10px auto;
+}
+
+.content {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+.exploration-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exploration-item {
+  margin: 10px 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.bullet {
+  color: orange;
+  margin-right: 10px;
+}
+
+.explore-title {
+  color: orange;
+}
+
+.exploration-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.exploration-item a:hover {
+  color: orange;
+}
+
+/* Adicione isso ao seu arquivo explorar.css */
+
+/* Estilizando os itens da lista de exploração */
+.exploration-item {
+  border: 1px solid #000;
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: black; /* Define a cor de fundo como preta */
+  color: white; /* Define a cor do texto como branca */
+  /* Adicione outros estilos desejados */
+}
+ /* ...seus estilos existentes... */
+
+ .image-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 20px; /* Ajuste conforme necessário */
+ }
+
+ .image-container img {
+     width: 220px; /* Ajuste o tamanho das imagens conforme necessário */
+     height: auto; /* Mantém a proporção da imagem */
+     margin-bottom: 10px; /* Espaçamento entre as imagens */
+ }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <div class="nav"></div>
+    </header>
+    <div class="background-image"></div>
+    <div class="content">
+        <div class="container">
+            <div class="login-container gray-bubble">
+                <h2>Login</h2>
+                <input type="text" id="loginUsername" placeholder="Login">
+                <input type="password" id="loginPassword" placeholder="Senha">
+                <button id="loginBtn">Entrar</button>
+            </div>
+            <div class="register-container gray-bubble">
+                <h2>Registro</h2>
+                <input type="email" id="registerEmail" placeholder="Email">
+                <input type="password" id="registerPassword" placeholder="Senha">
+                <button id="registerBtn">Cadastrar</button>
+            </div>
+        </div>
+        <div class="footer-links">
+            <a href="#">Termos de Uso</a>
+            <span>|</span>
+            <a href="#">Políticas de Privacidade</a>
+            <span>|</span>
+            <a href="#">Ferramentas e Consentimentos de Cookies</a>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.6.0/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyA8M8mQ-7AUJ2F09fsGmZWDNaG7d60Oiz4",
+            authDomain: "animix-4f2de.firebaseapp.com",
+            projectId: "animix-4f2de",
+            storageBucket: "animix-4f2de.appspot.com",
+            messagingSenderId: "707724042259",
+            appId: "1:707724042259:web:f7c432faacb044166c5fe6",
+            measurementId: "G-PSYKN7GKXZ"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+
+        document.getElementById('loginBtn').addEventListener('click', () => {
+            const email = document.getElementById('loginUsername').value;
+            const password = document.getElementById('loginPassword').value;
+
+            firebase.auth().signInWithEmailAndPassword(email, password)
+                .then((response) => {
+                    console.log('Login realizado com sucesso:', response.user);
+                    alert('Login realizado com sucesso!');
+                })
+                .catch((error) => {
+                    console.error('Usuário não cadastrado. Por favor, faça o registro primeiro.:', error.message);
+                    alert('Usuário não cadastrado. Por favor, faça o registro primeiro..');
+                });
+        });
+
+        function register() {
+            const email = document.getElementById('registerEmail').value;
+            const password = document.getElementById('registerPassword').value;
+
+            firebase.auth().createUserWithEmailAndPassword(email, password)
+                .then((userCredential) => {
+                    console.log('Novo usuário criado:', userCredential.user);
+                    alert('Usuário registrado com sucesso!');
+                })
+                .catch((error) => {
+                    console.error('Erro ao registrar usuário:', error.message);
+                    alert('Erro ao registrar usuário. Por favor, tente novamente.');
+                });
+        }
+
+        document.getElementById('registerBtn').addEventListener('click', register);
+    </script>
+</body>
+</html>

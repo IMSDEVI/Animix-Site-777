@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden; 
+}
+
+#titulo {
+    text-align: center;
+    padding: 20px;
+}
+
+#titulo h1 {
+    color: orange;
+}
+
+#content {
+    position: relative;
+}
+
+#imagem-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('dragonzzz.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#botoes {
+    position: absolute;
+    top: -70px;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 40px); /* Alargar os botões */
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+#episodioAnterior {
+    padding: 15px 25px;
+    background-color: orange;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-right: auto%; 
+}
+
+#proximoEpisodio {
+    padding: 15px 25px;
+    background-color: orange;
+    color: black;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+}

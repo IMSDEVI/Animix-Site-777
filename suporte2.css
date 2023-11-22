@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    display: flex;
+}
+
+.sidebar {
+    background-color: #333;
+    width: 300px;
+    height: 100vh;
+    padding: 20px; /* Espaçamento interno */
+    color: white;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar img {
+    max-width: 100%;
+    max-height: 200px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.content {
+    flex: 1;
+    background-color: gray;
+}
+
+.button-container {
+    margin-top: 20px; /* Ajuste essa margem conforme desejado */
+}
+
+.chat-box {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Largura do chat */
+    max-width: 600px; /* Largura máxima do chat */
+    background-color: black;
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input {
+    display: flex;
+    margin-top: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.chat-input button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px; /* Ajustando a largura do pop-up */
+    height: 400px; /* Ajustando a altura do pop-up */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.popup {
+    
+    font-size: 30px; 
+}
+
+.popup a img {
+    width: 50px; 
+    margin: 50px; 
+}
+
+.sidebar li {
+    font-size: 23px;
+}
+
+.sidebar p {
+    font-size: 23px;
+}
+
+/* ... (seu CSS existente) ... */
+
+.sidebar .title {
+    font-size: 28px; /* Ajuste o tamanho da fonte conforme desejado */
+    color: orange; /* Cor laranja */
+    text-align: center; /* Alinhar ao centro */
+    text-decoration: underline; /* Adicionar sublinhado */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.sidebar .content-container {
+    border: 2px solid orange; /* Adiciona um border laranja */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 8px; /* Arredonda as bordas */
+    margin-bottom: 20px; /* Espaçamento abaixo do conteúdo */
+    overflow: hidden; /* Evita que o border se expanda para fora da barra lateral */
+}

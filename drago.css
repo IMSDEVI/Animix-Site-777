@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: black;
+    color: lightgray;
+}
+
+#topbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+#topbar a {
+    color: orange;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#topbar a:hover {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#capa {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+#conteudo {
+    flex: 1;
+    margin-top: 20px;
+}
+
+#sinopse {
+    border: 2px solid lightgray;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#episodios {
+    margin-top: 20px;
+}
+
+#lista-episodios {
+    display: flex;
+}
+
+.tipo-episodio {
+    flex: 1;
+}
+
+#dublado,
+#legendado {
+    border: 2px solid lightgray;
+    padding: 10px;
+}
+
+.tipo-episodio ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tipo-episodio h3 {
+    margin-bottom: 10px;
+}
+
+#legendado {
+    margin-left: 5px;
+}
+
+.personagens img {
+  display: block;
+  margin: 10 auto 20px; /* Ajuste o valor da margem inferior conforme necessário */
+  width: 200px; /* Largura da imagem */
+  height: auto;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade</title>
+    <link rel="stylesheet" href="comunidade.css">
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="topbar-center">  
+      <span class="underline">♔𝓒𝓸𝓶𝓾𝓷𝓲𝓭𝓪𝓭𝓮 𝓐𝓷𝓲𝓶𝓲𝔁♕</span>
+      <a href="explorar.html" class="underline">⬅(𝔼𝕩𝕡𝕝𝕠𝕣𝕒𝕣)</a>
+    </div>
+  </div>
+
+  <div class="container">
+      <div class="sidebar">
+          <div class="user-container">
+              <div class="user-info">
+                  <div class="user-avatar">
+                    <img id="avatar-image" src="caminho/para/imagem-do-usuario.jpg" alt="Imagem do Usuário">
+                  </div>
+                  <div class="user-details">
+                    <div class="user-name" id="user-name">Nome do Usuário</div>
+                    <div class="user-options">
+                      <div class="icon" onclick="changeName()">Alterar Nome</div>
+                      <input type="file" id="avatar-input" onchange="changeAvatar(this)">
+                      <label for="avatar-input" class="icon" onclick="changeAvatar()">Alterar Ícone</label>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <div class="avatar-image-container">
+            <p>👻Postagens dos Admins👻</p>
+            <img src="icegif-544.gif" alt="Imagem do Usuário">
+            <img src="MBo3.gif" alt="Imagem do Usuário">
+            <img src="ezgif-4-4fa6fb502d.gif" alt="Imagem do Usuário">
+          </div>
+      </div>
+      <div class="content">
+          <div class="post-area">
+              <textarea id="comment-input" placeholder="Digite seu comentário aqui..."></textarea>
+              <button onclick="addComment()">Enviar</button>
+          </div>
+
+          <div class="comments comment-section" id="comments-section">
+              <!-- Comentários aparecerão aqui dinamicamente -->
+          </div>
+      </div>
+  </div>
+
+  <script>
+    function addComment() {
+        var commentText = document.getElementById("comment-input").value;
+
+        if (commentText.trim() !== "") {
+            var newComment = document.createElement("div");
+            newComment.classList.add("comment");
+
+            var userAvatar = document.createElement("div");
+            userAvatar.classList.add("user-avatar");
+            userAvatar.innerHTML = `
+                <img src="${document.getElementById('avatar-image').src}" alt="Imagem do Usuário">
+            `;
+
+            var userInfoDiv = document.createElement("div");
+            userInfoDiv.classList.add("user-info-comment");
+            userInfoDiv.textContent = document.getElementById('user-name').textContent;
+
+            var commentTextDiv = document.createElement("div");
+            commentTextDiv.classList.add("comment-text");
+            var paragraph = document.createElement("p");
+            paragraph.textContent = commentText;
+
+            commentTextDiv.appendChild(userInfoDiv); // Nome do usuário acima do comentário
+            commentTextDiv.appendChild(paragraph); // Texto do comentário abaixo do nome do usuário
+            newComment.appendChild(userAvatar);
+            newComment.appendChild(commentTextDiv);
+
+            var commentsSection = document.getElementById("comments-section");
+            commentsSection.appendChild(newComment);
+
+            document.getElementById("comment-input").value = "";
+        } else {
+            alert("Por favor, digite um comentário!");
+        }
+    }
+
+    function changeAvatar(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                document.getElementById('avatar-image').setAttribute('src', e.target.result);
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function changeName() {
+        var newName = prompt("Digite o novo nome do usuário:");
+        if (newName !== null && newName !== "") {
+            document.getElementById('user-name').textContent = newName;
+        }
+    }
+  </script>
+
+  <style>
+    /* Seu CSS existente */
+  </style>
+</body>
+</html>
