@@ -77,9 +77,9 @@ body {
 }
 
 .first-episode {
-    font-size: 16px; /* Ou o tamanho desejado */
+    font-size: 16px; 
     text-decoration: none;
     display: block;
     padding-bottom: 5px;
-    color: white; /* Definindo a cor do texto para branco */
+    color: white; 
 }
