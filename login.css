@@ -1,4 +1,3 @@
-/* Adicione seus estilos aqui */
 body {
     margin: 0;
     padding: 0;
@@ -55,7 +54,7 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px; /* Espaço entre os contêineres */
+    margin-top: 20px; 
 }
 
 .footer-links {
@@ -65,22 +64,22 @@ button {
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Permite que os links quebrem para a próxima linha */
+    flex-wrap: wrap;
 }
 
 .footer-links a {
     text-decoration: none;
     color: white;
-    margin: 5px; /* Espaço entre os links */
+    margin: 5px; 
 }
 
-/* Estilos para as imagens */
+
 .left-image,
 .right-image {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    max-height: 200px; /* Ajuste conforme necessário */
+    max-height: 200px; 
 }
 
 .left-image {
