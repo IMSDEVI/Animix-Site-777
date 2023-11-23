@@ -78,7 +78,7 @@ body {
 
 .personagens img {
   display: block;
-  margin: 10 auto 20px; /* Ajuste o valor da margem inferior conforme necessário */
-  width: 200px; /* Largura da imagem */
+  margin: 10 auto 20px; 
+  width: 200px; 
   height: auto;
 }
