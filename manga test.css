@@ -53,7 +53,7 @@ footer {
 }
 
 .image-grid img {
-  width: calc(10% - 12px); /* Para que as imagens ocupem 25% da largura com um espaçamento de 10px entre elas */
+  width: calc(10% - 12px); 
   border-radius: 5px;
 }
 
