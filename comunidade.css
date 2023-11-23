@@ -62,7 +62,7 @@ text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 .user-options .icon {
   background-color: #ccc;
   padding: 10px;
-  margin-bottom: 15px; /* Aumenta o espaço entre os botões */
+  margin-bottom: 15px; 
   border-radius: 4px;
   cursor: pointer;
 }
@@ -95,7 +95,7 @@ text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 .comments {
-  /* Estilize conforme necessário para os comentários */
+
 }
 
 .comment-section {
@@ -131,14 +131,10 @@ text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
   text-overflow: ellipsis;
 }
 
-/* Seu CSS existente */
-
-/* Esconde o texto do input file */
 input[type="file"] {
   display: none;
 }
 
-/* Estilo para o ícone de Alterar Ícone */
 .icon[for="avatar-input"] {
   cursor: pointer;
   background-color: #ccc;
@@ -148,14 +144,14 @@ input[type="file"] {
 }
 
 .topbar-center .underline {
-  border-bottom: 5px solid orange; /* Ou a cor que preferir */
+  border-bottom: 5px solid orange; 
 }
 
-/* Estilo para a imagem do usuário */
+
 .user-avatar img {
-    width: 100px; /* Ajuste o tamanho conforme necessário */
-    height: 100px; /* Ajuste o tamanho conforme necessário */
-    border-radius: 50%; /* Para tornar a imagem circular, se desejado */
+    width: 100px;
+    height: 100px; 
+    border-radius: 50%; 
 }
 
 
@@ -165,7 +161,7 @@ input[type="file"] {
   background-color: #ccc;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 30px; /* Aumenta o espaço abaixo da imagem */
+  margin-bottom: 30px; 
 }
 
 .user-avatar img {
@@ -175,13 +171,13 @@ input[type="file"] {
 }
 
 .user-details {
-    flex: 1; /* Para ocupar o espaço disponível */
+    flex: 1;
 }
 
 .user-name {
   font-weight: bold;
-  font-size: 24px; /* Altere o tamanho da fonte conforme desejado */
-  margin-bottom: 10px; /* Adicione espaço abaixo do nome */
+  font-size: 24px; 
+  margin-bottom: 10px; 
 }
 
 .user-container {
@@ -191,12 +187,12 @@ input[type="file"] {
 }
 
 .avatar-image-container img {
-    max-width: 250px; /* Defina o tamanho máximo da imagem */
-    height: auto; /* Mantém a proporção */
+    max-width: 250px; 
+    height: auto; 
 }
 
 .avatar-image-container p {
    font-weight: bold;
-    font-size: 17px; /* Altere o tamanho da fonte conforme desejado */
-    margin-bottom: 10px; /* Adicione espaço abaixo do nome */
+    font-size: 17px; 
+    margin-bottom: 10px; 
   }
