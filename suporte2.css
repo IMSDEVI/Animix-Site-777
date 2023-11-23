@@ -7,7 +7,7 @@ body {
     background-color: #333;
     width: 300px;
     height: 100vh;
-    padding: 20px; /* Espaçamento interno */
+    padding: 20px; 
     color: white;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .button-container {
-    margin-top: 20px; /* Ajuste essa margem conforme desejado */
+    margin-top: 20px; 
 }
 
 .chat-box {
@@ -37,10 +37,10 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 80%; /* Largura do chat */
-    max-width: 600px; /* Largura máxima do chat */
+    width: 80%;
+    max-width: 600px; 
     background-color: black;
-    padding: 20px; /* Espaçamento interno */
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -99,20 +99,19 @@ body {
     font-size: 23px;
 }
 
-/* ... (seu CSS existente) ... */
 
 .sidebar .title {
-    font-size: 28px; /* Ajuste o tamanho da fonte conforme desejado */
-    color: orange; /* Cor laranja */
-    text-align: center; /* Alinhar ao centro */
-    text-decoration: underline; /* Adicionar sublinhado */
-    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    font-size: 28px; 
+    color: orange; 
+    text-align: center; 
+    text-decoration: underline; 
+    margin-bottom: 10px; 
 }
 
 .sidebar .content-container {
-    border: 2px solid orange; /* Adiciona um border laranja */
-    padding: 10px; /* Espaçamento interno */
-    border-radius: 8px; /* Arredonda as bordas */
-    margin-bottom: 20px; /* Espaçamento abaixo do conteúdo */
-    overflow: hidden; /* Evita que o border se expanda para fora da barra lateral */
+    border: 2px solid orange; 
+    padding: 10px; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+    overflow: hidden; 
 }
